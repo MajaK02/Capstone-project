@@ -29,9 +29,10 @@ if os.path.isfile('env.py'):
 SECRET_KEY = os.environ.get('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = ['https://*.herokuapp.com']
+ALLOWED_HOSTS = ['capstone-project-mk-6cfa95e93b99.herokuapp.com',
+                 '.herokuapp.com']
 
 CSRF_TRUSTED_ORIGINS = ['https://*.codeinstitute-ide.net', 'https://*.herokuapp.com']
 
