@@ -1,0 +1,85 @@
+[
+              {
+                "model": "blog.post",
+                "pk": null,
+                "fields": {
+                    "title": "Exploring Kraków: A Journey Through History and Culture",
+                    "slug": "exploring-krakow-a-journey-through-history-and-culture",
+                    "author": "1",
+                    "content": "<p>Kraków, Poland's former royal capital, is a treasure trove of historical and cultural attractions.\r\n</p><p>\r\n Start your visit at the magnificent Wawel Royal Castle, a symbol of Polish heritage. Explore the Crown Treasury and Armoury, and venture into the legendary Dragon's Den. \r\n</p><p>\r\nWander through the charming Kraków Old Town, a UNESCO World Heritage Site, and marvel at the stunning architecture. Don't miss St. Mary's Basilica, an iconic Gothic church with its famous hourly trumpet call.\r\n</p><p>\r\nFor a taste of local cuisine, head to the Kraków Cloth Hall, where you can sample traditional Polish dishes like pierogi or bigos and shop for souvenirs.",
+                    "created_on":"2025-01-15T13:58:53.884Z",
+                    "status": 1,
+                    "excerpt": "Explore the historical and cultural treasures of Kraków, Poland's former royal capital.",
+                    "updated_on": "2025-01-17T09:43:19.754Z"
+                }
+            },
+      {
+        "model": "blog.post",
+        "pk": null,
+        "fields": {
+                    "title": "Warsaw: A City Reborn",
+                    "slug": "warsaw-a-city-reborn",
+                    "author": "1",
+                    "content": "Poland's capital, Warsaw, offers a unique blend of history and modernity. Begin your exploration at the Warsaw Old Market Place, meticulously reconstructed after WWII. For a peaceful retreat, visit Lazienki Park, one of Poland's largest urban parks, featuring beautiful gardens and the Palace on the Isle. History buffs should not miss the Warsaw Rising Museum, which commemorates the city's 1944 uprising against Nazi occupation. The POLIN Museum of the History of Polish Jews and the regal Wilanów Palace are also must-visit attractions.",
+                    "created_on":"2024-07-18T13:58:53.884Z",
+                    "status": 1,
+                    "excerpt": "Discover the historical and modern attractions of Warsaw, Poland's vibrant capital.",
+                    "updated_on": "2024-07-20T09:43:19.754Z"
+                }
+        },
+        {
+        "model": "blog.post",
+        "pk": null,
+        "fields": {
+                    "title": "Gdańsk: Baltic Beauty and History",
+                    "slug": "gdansk-baltic-beauty-and-history",
+                    "author": "1",
+                    "content": "Explore the charming coastal city of Gdańsk, known for its colorful architecture and rich Hanseatic history. Stroll through the picturesque Old Town and admire the stunning facades along Long Market. Visit the European Solidarity Centre to learn about Poland's struggle for democracy. Take a boat trip to the Hel Peninsula and enjoy its long sandy beaches. Gdańsk is also home to Poland's largest Zoo, where you can see animals from all over the world.",
+                    "created_on":"2024-03-22T13:58:53.884Z",
+                    "status": 1,
+                    "excerpt": "Discover the beauty and history of Gdańsk, a charming coastal city in Poland.",
+                    "updated_on": "2024-03-24T09:43:19.754Z"
+                }                           
+      },
+      {
+        "model": "blog.post",
+        "pk": null,
+        "fields": {
+                    "title": "Zakopane: Poland's Mountain Paradise",
+                    "slug": "zakopane-polands-mountain-paradise",
+                    "content": "Zakopane, located in the Tatra Mountains, is Poland's top mountain resort town. During summer, it's perfect for hiking, mountain climbing, swimming, and cycling. In winter, Zakopane becomes the country's premier skiing destination, offering activities like snowboarding, snowmobiling, and sleigh rides. The town's unique wooden architecture and vibrant folklore make it a cultural gem as well.",
+                    "created_on":"2025-01-15T13:58:53.884Z",
+                    "status": 1,
+                    "excerpt": "Explore Zakopane, Poland's mountain paradise, for outdoor adventures and cultural experiences.",
+                    "updated_on": "2025-01-17T09:43:19.754Z"
+                }
+      },
+      {
+        "model": "blog.post",
+        "pk": null,
+        "fields": {
+                    "title": "Wrocław: The City of Dwarfs",
+                    "slug": "wroclaw-the-city-of-dwarfs",
+                    "content": "Discover the charming city of Wrocław, famous for its picturesque Old Town and unique dwarf statues scattered throughout the city. Visit the impressive Wrocław Zoo, Poland's most popular attraction. Explore the historic Ostrów Tumski island and admire the city's beautiful architecture. Don't forget to hunt for the numerous dwarf statues that have become symbols of the city.",
+                    "created_on":"2024-03-22T13:58:53.884Z",
+                    "status": 1,
+                    "excerpt": "Explore Wrocław, the city of dwarfs, and discover its historic sites and whimsical statues.",
+                    "updated_on": "2024-03-24T09:43:19.754Z"
+            }
+
+      },
+      {
+        "model": "blog.post",
+        "pk": null,
+        "fields": {
+                    "title": "Toruń: Gothic Gem and Gingerbread Capital",
+                    "slug": "torun-gothic-gem-and-gingerbread-capital",
+                    "content": "Toruń, a walled Gothic city on the Vistula River, miraculously escaped WWII intact. Wander through the UNESCO-listed Old Town crammed with museums, churches, grand mansions, and squares. Visit the house of Nicolaus Copernicus, the famous astronomer born in Toruń. Don't miss the opportunity to try or even make Toruń's signature snack - peppery gingerbread cookies at the Gingerbread Museum.",
+                    "created_on":"2024-07-18T13:58:53.884Z",
+                    "status": 1,
+                    "excerpt": "Explore Toruń, a Gothic gem and the gingerbread capital of Poland, for a taste of history and sweets.",
+                    "updated_on": "2024-07-20T09:43:19.754Z"
+                }
+      }
+]
+ 
