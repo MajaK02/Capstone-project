@@ -54,7 +54,7 @@ body {
     position: relative;
 }
 
-/*
+
 .image-flash {
     position: absolute;
     bottom: 5%;
@@ -73,7 +73,7 @@ body {
     color: white;
     margin: 4px;
     text-transform: uppercase;
-} */
+} 
 
 /* Blog post (top) */
 .masthead {
@@ -177,4 +177,15 @@ body {
 
 .approval {
     color: rgb(222, 146, 168);
+}
+
+/* Social media icons */
+.footer .social-icon {
+    margin: 0 10px; /* Adjust the spacing as needed */
+    color: #C0895C; /* Change the color as needed */
+    font-size: 1.5rem; /* Adjust the size as needed */
+}
+
+.footer .social-icon:hover {
+    color: #fff; /* Change the hover color as needed */
 }
