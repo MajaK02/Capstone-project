@@ -2,8 +2,8 @@
 {% load static %}
 {% block content %}
 
-<!-- Carousel -->
-<div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+<!-- Carousel --> 
+<div id="myCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
   <div class="carousel-indicators">
     <button
       type="button"
@@ -35,14 +35,7 @@
       />
       <div class="container">
         <div class="carousel-caption text-start">
-          <h1>Example headline.</h1>
-          <p>
-            Some representative placeholder content for the first slide of the
-            carousel.
-          </p>
-          <p>
-            <a class="btn btn-lg btn-primary" href="#">Sign up today</a>
-          </p>
+          <h1>Looking for a new adventure? </h1>
         </div>
       </div>
     </div>
@@ -52,16 +45,6 @@
         class="d-block w-100"
         alt="Slide 2"
       />
-      <div class="container">
-        <div class="carousel-caption">
-          <h1>Another example headline.</h1>
-          <p>
-            Some representative placeholder content for the second slide of the
-            carousel.
-          </p>
-          <p>
-            <a class="btn btn-lg btn-primary" href="#">Learn more</a>
-          </p>
         </div>
       </div>
     </div>
@@ -71,64 +54,33 @@
         class="d-block w-100"
         alt="Slide 3"
       />
-      <div class="container">
-        <div class="carousel-caption text-end">
-          <h1>One more for good measure.</h1>
-          <p>
-            Some representative placeholder content for the third slide of this
-            carousel.
-          </p>
-          <p>
-            <a class="btn btn-lg btn-primary" href="#">Browse gallery</a>
-          </p>
         </div>
       </div>
     </div>
   </div>
-  <button
-    class="carousel-control-prev"
-    type="button"
-    data-bs-target="#myCarousel"
-    data-bs-slide="prev"
-  >
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-  </button>
-  <button
-    class="carousel-control-next"
-    type="button"
-    data-bs-target="#myCarousel"
-    data-bs-slide="next"
-  >
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </button>
-</div>
 
 <!-- index.html content starts here -->
 <div class="container-fluid">
   <div class="row">
-    <!-- Blog Entries Column -->
-    <div class="col-12 mt-3 left">
+
+     <!-- Quote section -->
+     <div class="card quote-section">
+      <div class="card-body">
+        <blockquote class="blockquote mb-0">
+          <p><strong>“There is hope, even when your brain tells you there isn’t.”</strong></p>
+          <p class="blockquote-footer">John Green</p>
+        </blockquote>
+      </div>
+    </div>
+
+     <!-- Blog Entries Column -->
+     <div class="col-12 mt-3 left">
       <div class="row">
         {% for post in post_list %}
         <div class="col-md-4">
           <div class="card mb-4">
             <div class="card-body">
               <div class="image-container">
-                {% if "placeholder" in post.featured_image.url %}
-                <img
-                  class="card-img-top"
-                  src="{% static 'images/default.jpg' %}"
-                  alt="placeholder image"
-                />
-                {% else %}
-                <img
-                  class="card-img-top"
-                  src=" {{ post.featured_image.url }}"
-                  alt="{{ post.title }}"
-                />
-                {% endif %}
                 <div class="image-flash">
                   <p class="author">Author: {{ post.author }}</p>
                 </div>

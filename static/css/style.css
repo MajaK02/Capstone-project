@@ -6,7 +6,7 @@ body {
     font-family: Lato, sans-serif;
     font-size: 1.4rem;
     font-weight: 700;
-    color: #4A4A4F;
+    color: #C0895C;
 }
 
 /* Navigation */
@@ -17,16 +17,22 @@ body {
 }
 
 .navbar-custom .navbar-brand img {
-    height: 60px; /* Increase logo size */
+    height: 55px; /* Increase logo size */
 }
 
 .navbar-custom .nav-link {
     padding: 0.75rem 1rem; /* Increase padding for nav links */
 }
 
+/* Carousel image size */
+.carousel-inner img {
+    max-height: 500px; /* Adjust the height as needed */
+    object-fit: cover; /* Ensure the image covers the area while maintaining aspect ratio */
+}
+
 /* Blog posts on Main page */
 .red-o {
-    color: #9DBDA4;
+    color: #345346;
 }
 
 .thin {
@@ -43,17 +49,20 @@ body {
     background-color: transparent;
 }
 
+
 .image-container {
     position: relative;
 }
 
+/*
 .image-flash {
     position: absolute;
     bottom: 5%;
     min-width: 30%;
     left: -2px;
-    background-color: #9DBDA4;
+    background-color: #345346;
 }
+
 
 .scale {
     width: 100%;
@@ -64,8 +73,9 @@ body {
     color: white;
     margin: 4px;
     text-transform: uppercase;
-}
+} */
 
+/* Blog post (top) */
 .masthead {
     margin-top: 10px;
     overflow: hidden;
@@ -93,7 +103,7 @@ body {
     right: 90%;
     height: 100%;
     width: 150%;
-    background: #445261;
+    background: #345346;
     -webkit-transform: skew(15deg);
     -moz-transform: skew(15deg);
     transform: skew(15deg);
@@ -102,7 +112,7 @@ body {
 
 .post-link {
     text-decoration: none;
-    color: #445261;
+    color: #345346;
 }
 
 .post-link:hover,
