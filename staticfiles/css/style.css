@@ -9,8 +9,22 @@ body {
     color: #4A4A4F;
 }
 
+.navbar-custom {
+    background-color: #345346;
+    padding: 1.5rem 1rem; /* Increase padding */
+    font-size: 1.25rem; /* Increase font size */
+}
+
+.navbar-custom .navbar-brand img {
+    height: 60px; /* Increase logo size */
+}
+
+.navbar-custom .nav-link {
+    padding: 0.75rem 1rem; /* Increase padding for nav links */
+}
+
 .red-o {
-    color: #E84610;
+    color: #9DBDA4;
 }
 
 .thin {
@@ -43,7 +57,7 @@ body {
     bottom: 5%;
     min-width: 30%;
     left: -2px;
-    background-color: #188181;
+    background-color: #9DBDA4;
 }
 
 .scale {
@@ -67,8 +81,8 @@ body {
 }
 
 .masthead-text {
-    background-color: #445261;
-    color: white;
+    background-color: #9DBDA4;
+    color: black;
     position: relative;
 }
 
