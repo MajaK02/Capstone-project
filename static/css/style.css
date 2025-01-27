@@ -17,12 +17,12 @@ body {
 }
 
 /* Navbar font color */
-.navbar-custom .navbar-brand,
-.navbar-custom .nav-link {
+.navbar-brand,
+.navbar-nav .nav-link {
     color: #C0895C !important; /* Change text color */
 }
 
-.navbar-custom .nav-link:hover {
+.navbar-nav .nav-link:hover {
     color: #FFD700 !important; /* Optional: Change color on hover */
 }
 
