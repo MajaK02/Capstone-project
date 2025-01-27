@@ -1,9 +1,12 @@
-{% extends "base.html" %} 
-{% load static %}
-{% block content %}
+{% extends "base.html" %} {% load static %} {% block content %}
 
-<!-- Carousel --> 
-<div id="myCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+<!-- Carousel -->
+<div
+  id="myCarousel"
+  class="carousel slide"
+  data-bs-ride="carousel"
+  data-bs-interval="3000"
+>
   <div class="carousel-indicators">
     <button
       type="button"
@@ -25,73 +28,120 @@
       data-bs-slide-to="2"
       aria-label="Slide 3"
     ></button>
+    <button
+      type="button"
+      data-bs-target="#myCarousel"
+      data-bs-slide-to="3"
+      aria-label="Slide 4"
+    ></button>
   </div>
   <div class="carousel-inner">
     <div class="carousel-item active">
       <img
-        src="{% static 'images/poland1.jpeg' %}"
+        src="{% static 'images/poland7.jpeg' %}"
         class="d-block w-100"
-        alt="View of colourful houses by a semi-frozen lake in Poland"
+        alt="Slide 1"
       />
       <div class="container">
         <div class="carousel-caption text-start">
-          <h1>Looking for a new adventure? </h1>
+          <h1>Slide 1</h1>
+          <p>Some representative placeholder content for the first slide.</p>
         </div>
       </div>
     </div>
     <div class="carousel-item">
       <img
-        src="{% static 'images/poland2.jpeg' %}"
+        src="{% static 'images/poland8.jpeg' %}"
         class="d-block w-100"
         alt="Slide 2"
       />
+      <div class="container">
+        <div class="carousel-caption">
+          <h1>Slide 2</h1>
+          <p>Some representative placeholder content for the second slide.</p>
         </div>
       </div>
     </div>
     <div class="carousel-item">
       <img
-        src="{% static 'images/poland3.jpeg' %}"
+        src="{% static 'images/poland6.jpeg' %}"
         class="d-block w-100"
         alt="Slide 3"
       />
+      <div class="container">
+        <div class="carousel-caption text-end">
+          <h1>Slide 3</h1>
+          <p>Some representative placeholder content for the third slide.</p>
+        </div>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img
+        src="{% static 'images/poland9.jpeg' %}"
+        class="d-block w-100"
+        alt="Slide 4"
+      />
+      <div class="container">
+        <div class="carousel-caption text-end">
+          <h1>Slide 4</h1>
+          <p>Some representative placeholder content for the fourth slide.</p>
         </div>
       </div>
     </div>
   </div>
+</div>
 
+<br />
 <!-- index.html content starts here -->
 <div class="container-fluid">
   <div class="row">
-
-     <!-- Quote section -->
-     <div class="card quote-section">
+    <!-- Quote section -->
+    <div class="card quote-section">
       <div class="card-body">
         <blockquote class="blockquote mb-0">
-          <p><strong>“There is hope, even when your brain tells you there isn’t.”</strong></p>
-          <p class="blockquote-footer">John Green</p>
+          <p>
+            <strong
+              >“Whoever speaks of Paris has never seen Warsaw. Whoever yearns
+              for an aristocratic sensibility, let him switch on the great light
+              of Warsaw.”</strong
+            >
+          </p>
+          <p class="blockquote-footer">Cynthia Ozick</p>
         </blockquote>
       </div>
     </div>
-
-     <!-- Blog Entries Column -->
-     <div class="col-12 mt-3 left">
+    <br />
+    <!-- Blog Entries Column -->
+    <div class="col-12 mt-3 left">
       <div class="row">
         {% for post in post_list %}
         <div class="col-md-4">
           <div class="card mb-4">
             <div class="card-body">
               <div class="image-container">
+                {% if "placeholder" in post.featured_image.url %}
+                <img
+                  class="card-img-top"
+                  src="{% static 'images/default.jpg' %}"
+                  alt="placeholder image"
+                />
+                {% else %}
+                <img
+                  class="card-img-top"
+                  src=" {{ post.featured_image.url }}"
+                  alt="{{ post.title }}"
+                />
+                {% endif %}
                 <div class="image-flash">
                   <p class="author">Author: {{ post.author }}</p>
                 </div>
               </div>
               <a href="{% url 'post_detail' post.slug %}" class="post-link">
                 <h2 class="card-title">{{ post.title }}</h2>
-                <p class="card-text">{{ post.excerpt}}</p>
+                <p class="card-text">{{ post.excerpt }}</p>
               </a>
-
               <hr />
-              <p class="card-text text-muted h6">{{ post.created_on}}</p>
+              <p class="card-text text-muted h6">{{ post.created_on }}</p>
             </div>
           </div>
         </div>
@@ -99,27 +149,31 @@
       </div>
       <div class="row">{% endif %} {% endfor %}</div>
     </div>
+    {% if is_paginated %}
+    <nav aria-label="Page navigation">
+      <ul class="pagination justify-content-center">
+        {% if page_obj.has_previous %}
+        <li>
+          <a href="?page={{ page_obj.previous_page_number }}" class="page-link"
+            >&laquo; PREV</a
+          >
+        </li>
+        {% endif %} {% for num in paginator.page_range %}
+        <li class="page-item {% if page_obj.number == num %}active{% endif %}">
+          <a class="page-link" href="?page={{ num }}">{{ num }}</a>
+        </li>
+        {% endfor %} {% if page_obj.has_next %}
+        <li>
+          <a href="?page={{ page_obj.next_page_number }}" class="page-link">
+            NEXT &raquo;</a
+          >
+        </li>
+        {% endif %}
+      </ul>
+    </nav>
+    {% endif %}
   </div>
-  {% if is_paginated %}
-  <nav aria-label="Page navigation">
-    <ul class="pagination justify-content-center">
-      {% if page_obj.has_previous %}
-      <li>
-        <a href="?page={{ page_obj.previous_page_number }}" class="page-link"
-          >&laquo; PREV</a
-        >
-      </li>
-      {% endif %} {% if page_obj.has_next %}
-      <li>
-        <a href="?page={{ page_obj.next_page_number }}" class="page-link">
-          NEXT &raquo;</a
-        >
-      </li>
-      {% endif %}
-    </ul>
-  </nav>
-  {% endif %}
-</div>
 
-<!-- index.html content ends here -->
-{% endblock %}
+  <!-- index.html content ends here -->
+  {% endblock %}
+</div>

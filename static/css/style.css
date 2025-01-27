@@ -16,6 +16,16 @@ body {
     font-size: 1.25rem; /* Increase font size */
 }
 
+/* Navbar font color */
+.navbar-custom .navbar-brand,
+.navbar-custom .nav-link {
+    color: #C0895C !important; /* Change text color */
+}
+
+.navbar-custom .nav-link:hover {
+    color: #FFD700 !important; /* Optional: Change color on hover */
+}
+
 .navbar-custom .navbar-brand img {
     height: 55px; /* Increase logo size */
 }
@@ -188,4 +198,23 @@ body {
 
 .footer .social-icon:hover {
     color: #fff; /* Change the hover color as needed */
+}
+
+.portrait-img {
+    max-width: 100%;
+    height: auto;
+    max-height: 400px; /* Adjust the height as needed */
+}
+
+/* Footer font color */
+.footer {
+    color: #C0895C !important; /* Change text color */
+}
+
+.footer a {
+    color: #C0895C !important; /* Change link color */
+}
+
+.footer a:hover {
+    color: #FFD700 !important; /* Optional: Change color on hover */
 }
