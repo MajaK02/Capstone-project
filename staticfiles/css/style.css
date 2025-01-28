@@ -16,8 +16,14 @@ body {
     font-size: 1.25rem; /* Increase font size */
 }
 
-a.navbar-brand {
+/* Navbar font color */
+.navbar-brand,
+.navbar-nav .nav-link {
     color: #C0895C !important; /* Change text color */
+}
+
+.navbar-nav .nav-link:hover {
+    color: #FFD700 !important; /* Optional: Change color on hover */
 }
 
 .navbar-custom .navbar-brand img {
@@ -181,4 +187,34 @@ a.navbar-brand {
 
 .approval {
     color: rgb(222, 146, 168);
+}
+
+/* Social media icons */
+.footer .social-icon {
+    margin: 0 10px; /* Adjust the spacing as needed */
+    color: #C0895C; /* Change the color as needed */
+    font-size: 1.5rem; /* Adjust the size as needed */
+}
+
+.footer .social-icon:hover {
+    color: #fff; /* Change the hover color as needed */
+}
+
+.portrait-img {
+    max-width: 100%;
+    height: auto;
+    max-height: 400px; /* Adjust the height as needed */
+}
+
+/* Footer font color */
+.footer {
+    color: #C0895C !important; /* Change text color */
+}
+
+.footer a {
+    color: #C0895C !important; /* Change link color */
+}
+
+.footer a:hover {
+    color: #FFD700 !important; /* Optional: Change color on hover */
 }
