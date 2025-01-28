@@ -1,14 +1,21 @@
 Discover Polska 
 
-For this Capstone project, 
+For this capstone project, the aim was to develop a full stack website built using the Django web framework. Discover Polska is a travel blog suitable for female or solo travellers wanting to explore locations in Poland, and read comments from other travelers to get their opinion or other useful advice regarding specific locations, cities or attractions.  This website provides users with; a blog with the top attractions in Poland, comments section, and about page for users to gin insight into who the writer is (I used myself in this case as I felt it was more authentic) and a contact us form, which encouraged users, other travellers or travel companies to get in contact in order to set up collaboration, share some more hidden locations to see and other requestes. 
+
+With its current features and any future developments, the hope is that this travel blog will become a valuable travel tool for thise wanting to explore Poland or solo travel while showcasing modern web development techniques.
+
+The website was built using Django, HTML, CSS, and JavaScript, computer/laptop-based first, rather than mobile, however using Bootstrap ensured wide accessibility & responsiveness across various devices and platforms.
+
+This project can be found at: https://capstone-project-mk-6cfa95e93b99.herokuapp.com/ 
+
+![Homepage](docs/readme_images/hero_image.png)
 
 ## Table of Contents
-- [Introduction/ Purpose](#Introduction/Purpose)
 - [User experience (UX)](#user-experience-ux)
    * [Objectives](#objectives)
    * [Target audience](#target-audience)
    * [User stories](#user-stories)
-- [Agile Practice/ Development](#AgilePractice/Development)
+- [Technologies](#Technologies)
 - [Design](#Design)
 * [Color Palette](#ColorPalette)
 * [Icons & Images](#Icons&Images)
@@ -32,15 +39,6 @@ For this Capstone project,
 - [Future Improvements](#FutureImprovements)
 - [Acknowledgements](#Acknowledgements)
 
-
-## Introduction/ Project Proposal 
-
-For this capstone project, the aim was to develop a full stack website built using the Django web framework. Discover Polska is a travel blog suitable for female or solo travellers wanting to explore locations in Poland, and read comments from other travelers to get their opinion or other useful advice regarding specific locations, cities or attractions.  This website provides users with; a blog with the top attractions in Poland, comments section, and about page for users to gin insight into who the writer is (I used myself in this case as I felt it was more authentic) and a contact us form, which encouraged users, other travellers or travel companies to get in contact in order to set up collaboration, share some more hidden locations to see and other requestes. 
-
-With its current features and any future developments, the hope is that this travel blog will become a valuable travel tool for thise wanting to explore Poland or solo travel while showcasing modern web development techniques.
-
-The website was built using Django, HTML, CSS, and JavaScript, computer/laptop-based first, rather than mobile, however using Bootstrap ensured wide accessibility & responsiveness across various devices and platforms.
-
 ## User Expereince (UX)
 
 ### Objectives
@@ -48,29 +46,61 @@ The website was built using Django, HTML, CSS, and JavaScript, computer/laptop-b
 * Provide a user-friendly interface for finding information on travel locations
 * Ensure responsiveness across different screen sizes
 
-#### Target Audience
+### Target Audience
 * Female or Solo travellers looking to explore more of Europe
 * Users who are specifically wanting to explore more of Poland, including city breaks, historical monuments or nature. 
 * Travel agencies/ companies who wish to get in contact to collaborate, offer funding for travel or users who want to suggest other locations not listed in the blog. 
 
+### User Stories
+
+GitHub Copilot provided useful suggestions for user stories, though some required adjustment to meet project goals.
+
+The user stories for this project were taken from the Code Institute Code-Star blog project.
+
+This prompt generated the necessary user stories applicable to our project design, and it was further clarified to include the must-have, shold-have and could-have MOSCoW labels. 
+
+* As a user, I want to modify or delete a comment I made on a blog post
+* As a user, I want to be able to register an account on the blog using an email or username. 
+* As a user I can leave comments on a post so that I can be involved in the conversation
+* As a user / Admin I can view comments on an individual post so that I can read the conversation
+* As a user, I can view a paginated list of posts so that I can select which post I want to view.
+* As a user, I want to be able to access the blog on any device (laptop or mobile).
 
 
-## Technologies and AI
+## Technologies
 
 This project was created using the following technologies:
 
-* Python
-* Django
+* Django, including:
+    * summernote==0.8.20.0
+    * allauth==0.57.2
+    * crispy-forms==2.3
 * Javascript for functionality and interactivity
 * HTML5 for structure
-* CSS3 for styling and responsiveness (Flexbox)
-
+* CSS3 for styling and responsiveness (Bootstrap)
+* Python, including:
+    * asgiref==3.8.1
+    * cloudinary==1.41.0
+    * dj-database-url==0.5.0
+    * gunicorn==20.1.0
+    * oauthlib==3.2.2
+    * psycopg==3.2.1
+    * PyJWT==2.9.0
+    * python3-openid==3.2.0
+    * requests-oauthlib==2.0.0
+    * sqlparse==0.5.1
+    * urllib3==1.26.19
+    * whitenoise==5.3.0
 
 This ensured the project was in line with the project requirements as set out by Code Institute but also ensured that the travel blog was responsive, functional and accessible to our target audience. 
 
+### Database
+
+- [PostgreSQL from Code Institute](https://dbs.ci-dbs.net/ "link to postgresql from code institute") was used as the PostgreSQL database for this project. 
+
 ### AI
 
-To further supplement our website design, we included the following AI technology and websites to aid in the creation of our user stories, initial design ideas and to debug any issues within our code (more on this in the 'Agile Practice' section). 
+To further supplement the website design, I included the following AI technology and websites to aid in the creation of the user stories, initial design ideas and to debug any issues within the code.
 
 * #### [Perplexity.ai](#https://www.perplexity.ai) 
 * #### [Chat GPT](#https://chatgpt.com/)
@@ -82,49 +112,56 @@ To further supplement our website design, we included the following AI technolog
 * [Favicon](#https://favicon.io/)
 * [Font Awesome](#https://fontawesome.com/)
 * [FreePik](#https://www.freepik.com/premium-vector/karate-logo-with-red-sunset_24779702.htm)
+* [Cloudinary](https://cloudinary.com/") was used to host images
+* [Code Institute](#https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+SBIFSPAI_PS+1/courseware/0bf0a428e5be490abd9442fffa403666/2ef05be5acd14e05bcd9723c29f0f6b2/)
+* [Tinypng](#https://tinypng.com/) - For picture compression
+* [Bootstrap](#https://getbootstrap.com/)
+* Inspiration for design came from previous CI Bootcamp students' projects, including:
+    * [Statement Beauty](#https://statement-beauty-ec9472f892b1.herokuapp.com/)
+    * [Nature-blog](#https://github.com/helproudman/nature-blog?tab=readme-ov-file#testing)
+* [Heroku](https://id.heroku.com/login "link to Heroku login") was used to deploy the project.
+* [Google Chrome Developer Tools](https://developer.chrome.com/docs/devtools/overview/) was used for lighthouse testing, debugging and consistently checking responsiveness
+* [W3C Markup Validator](https://validator.w3.org/) was used to validate all live html
+* [Jigsaw CSS Validator](https://jigsaw.w3.org/css-validator/") was used to validate CSS code
+* [JS Hint](https://jshint.com/) was used to validate JavaScript code
+* [Code Institute Python Linter](https://pep8ci.herokuapp.com/) was used to validate all python code
+* [Lucid Chart](#https://lucid.app/) was used to create the Entity relationship Diagram for this project.
+* [Wix] was also used to generate a logo for my blog.
+* [Coolors]
 
+## Database Schema
 
-## Agile Practice
+### Entity relationship Diagram
+In the screenshot below, the ERD showcases that the User has a relationship to Post and Comment and Comment also has a relationship with both User and Post. 
 
-### User Stories
+![ERD](docs/readme_images/erd.png)
 
-GitHub Copilot provided useful suggestions for user stories, though some required adjustment to meet project goals.
-
-The user stories for this project were generated by Perplexity.ai using the prompt:
-"I'm creating a multiple choice quiz on Japanese vocab in Karate using html, css and javascript. Could you create user stories for this quiz". 
-
-This prompt generated the necessary user storei applicable to ur project design, and it was further clarified to include the must-have, shold-have and could-have labels. 
-
-* As a user, I want to modify or delete a comment I made on a blog post
-* As a user, I want to be able to register an account on the blog using an email or username. 
-* As a user I can leave comments on a post so that I can be involved in the conversation
-* As a user / Admin I can view comments on an individual post so that I can read the conversation
-* As a user, I can view a paginated list of posts so that I can select which post I want to view.
-* As a user, I want to be able to access the blog on any device (laptop or mobile).
-
-
-
-### Web design 
-
-For the design of the project, 
-
+## Design 
 
 ### Wireframes
 
-#### Prospective Wireframes 
+Prior to starting the project, I designed prospective wireframes using [Balsamiq](#https://balsamiq.com/wireframes/) to have an idea of the blog's design, layout and feature placement. Ultimately, depsite some minor changes, the project remained closely aligned with the inital wireframes. 
 
-Prior to starting the project, we designed prospective wireframes using [Balsamiq](#https://balsamiq.com/wireframes/) to have an idea of the blog's design, layout and feature placement. 
+![Wireframe](docs/readme_images/wireframe.png)
 
+### Color Palette & Color contrast 
+ 
+The color scheme for this blog was inspired by a blog template from Wix, which inspired a nature-based color palette of green, cream/brown/gold. This was meant to inspire calmness, relaxation and for the user's eye to be drawn to the pictures on the blog posts. Using this approach was intended to not be overbearing on the user and not overwhelm with too many colors and information. 
 
-[screenshot!]. 
+The initial color palette from Coolers was Hazy Hues, with the exception of the font color. 
 
-On a desktop/laptop, the design was similar. 
+![Color palette](docs/readme_images/Hazy%20Hues.png)
 
+The initial text color of choice was #C0895C however this resulted in a low WAVE score (low contrast), espcially for users with issues with vision. 
 
-#### Final Wireframes 
+![colour contrast](docs/readme_images/contrast.png)
 
-Throughout the project, the wireframe deviated form the inital wireframe design. 
+Therefore, it was changed to the initial color pallete from hazy hues. However, it is being kept for future developments, as an alternative if the green background color could be altered slightly to make the contrast more effective.
 
+### Icons & Images
+The logo for this project was intended to be memorable and inspiring calmness, and it was generated by the Wix free logo designer. The intended color scheme was checked alongside the initial Hazy Hues palette to see if it matches, and ultimately the green color was taken from the logo to make it seamless. 
+
+![logo](docs/readme_images/logo.png)
 
 ## Features
 ### Logo and navigation bar
@@ -198,7 +235,80 @@ The signout page confirms the user's actions to sign out of the blog: 'Are you s
 
  ![Quote](docs/readme_images/quote.png)
 
-### WAVE Accessibility validation
+## Deployment
+The site was created using the Code Institute template and deployed to Heroku. The steps to deploy are as follows:
 
-### Color contrast 
-  The initial text color of choice was #C0895C however this resulted in a low WAVE score (low contrast), espcially for users with issues with vision. Therefore, it was changed to the initial color pallete. but it is being kept for future developments, as an alternative if the green background color could be altered slightly to make the contrast more effective.  
+* Install the gunicorn python package and create a file called 'Procfile' in the repo's root directory
+* In the Procfile write 'web: gunicorn lunar_lists.wsgi'
+* In settings.py add ".herokuapp.com" to the ALLOWED_HOSTS list
+* In settings.py add 'https://*.herokuapp.com' to CSRF_TRUSTED_ORIGINS list, git add, commit and push to github
+* Navigate to the Heroku dashboard
+
+Create a new Heroku app
+* Give it a name and select the region 'Europe' Navigate to settings tab and scroll down to Config Vars
+* Click 'Reveal Config Vars'
+* Add the following keys: key = DATABASE_URL | value = (my secret database url) key = SECRET_KEY | value = (my secret key) Navigate to Deploy tab
+* Connect to GitHub and select the repo 'lunar-lists'
+* Scroll down to 'Manual deploy' and select the 'main' branch
+* Click 'Deploy Branch'
+
+The live website for this project can be found at: https://capstone-project-mk-6cfa95e93b99.herokuapp.com/
+
+## Issues and Bugs
+One of the key issue during development was Heroku deployment. Repeatedly an error would pop up when the project was deployed, regarding static files. Having troubleshooted using copilot, ensured all the files were in place by going back to the Code Star blog walthought from Code Institute, the error was resolved by installing the psycopg2-binary package rather than the psycopg2 package.  
+
+
+
+ ## Validation
+
+Testing and validation of this blog were carried out throughout the course of the project. This included regular debugging and testing using the Dev Tools provided within Chrome Browser, utilizing Copilot & Perplexity alongside using validation testing to address any code lines which needed fixing.
+
+### HTML W3C
+No errors were returned when passing the HTML code through the official [W3C validator]. For this project however, rather than passing through the entire project link, it was necessary to copy and paste the HTML code from the deployed 'view page source', into the validator via direct text input.
+
+This is due to the fact that most pages require user authentication and the HTML vlaidator would throw errors if only the URL was used. 
+
+![HTML](docs/readme_images/html_test.png)
+
+#### CSS validation
+
+When passing through the official [Jigsaw validator](#https://jigsaw.w3.org/), the direct CSS code also returned no bugs or errors. 
+
+![CSS](docs/readme_images/css_val.png)
+
+#### Javascript 
+
+The validation for javascript for the blog returned no issues, only messages regarding ES6 which for this project is acceptable. 
+
+
+### Lighthouse testing
+Official lighthouse testing of the blog revealed a 78% performance rating, which is quie low but may be due to image sizes again, depsite thier compression. In the initial lighthouse assessment, the score was even low due to images sizing for the blog posts, therefore this was compressed using Tinypng.com.
+
+However, I am very happy about the 95% accessibility rating, which means that it may recieve more traffic due to being easy to use and 'accessible'. 
+
+![Lighthouse](docs/readme_images/lighthouse.png)
+
+### WAVE Accessibility validation
+When the project was put through the WAVE validation, it returned some contrast errors, alt-image errors and highlighted the repeatability of some of the links. The contrast was changed following a contrast checker revealed a low score for the intended color palette, all the images in my project had relevant alt-descriptors and the numbered pagination links were removed, leaving only the PREV and NEXT buttons.
+
+However, there remains 1 issue and 1 warning for the final project, which includes a missing H1 tag and some unclear color on the pagination buttons. I utilized copilot to try to fix these issues, however they remain as small bugs to fix in the next iteration of working on this project.
+
+![Wave](docs/readme_images/wave.png)
+
+### CI Pep8 Linter
+When the main settings.py, models.py and admin.py documents were run, they returned some deisgn errors (mainly white space errors) however these were mostly corrected, although there was some disagreement between pep8's expectations and co-pilots output when the error was questionned. 
+
+## Future Improvements 
+When I work on this project in the future I intended to improve the styling options, improving on the Wave error of contrast colors for better visibility. Furthermore, I wish to improve the lighthouse score even more, therefore more time will be spent familiarising myself with what exactly the errors are referring to, as in some cases by limited knowledge and experience meant that more time was spent debugging than on the project itself. 
+Additionally, I intend to include a interactive map (using Javascript most likely) on which users can click on the area they are interested in and the relevant blog posts will be shown. 
+
+## Acknowledgements
+Code, Content, Project LOs and primary learning supplied by Code Institute LMS. 
+
+Supplemental learning resources directly used / referenced within the project:
+
+ - [Awesome Readme Templates](https://awesomeopensource.com/project/elangosundar/awesome-README-templates)
+ - [Awesome README](https://github.com/matiassingers/awesome-readme)
+ - [How to write a Good readme](https://bulldogjob.com/news/449-how-to-write-a-good-readme-for-your-github-project)
+
+All other technologies and AI programmes used as referenced and acknowledged in the technology section of this READMe. 
