@@ -197,3 +197,8 @@ The signout page confirms the user's actions to sign out of the blog: 'Are you s
    This quote section is located underneath the hero image and before the blog list. It is designed to act as a break between the two sections so that the overall page does not look cluttered to the user. 
 
  ![Quote](docs/readme_images/quote.png)
+
+### WAVE Accessibility validation
+
+### Color contrast 
+  The initial text color of choice was #C0895C however this resulted in a low WAVE score (low contrast), espcially for users with issues with vision. Therefore, it was changed to the initial color pallete. but it is being kept for future developments, as an alternative if the green background color could be altered slightly to make the contrast more effective.  
