@@ -149,6 +149,7 @@ For my hero image, I used a Bootstrap automatic carousel with 4 aesthetic images
 Everytime a change is made, there is an alert message; whether that is logging in/ out, when the user makes, edits or deletes a comment there is an automatic message ('Your comment is awaiting approaval' etc. )
 
  ![Alert messages ](docs/readme_images/signed_out.png)
+ ![Contact Us message](docs/readme_images/contact_message.png)
 
 ### Clear indication as to whether the user is logged in or out at all times
 The base.html file is responsible for displaying a "You are logged in as username" or "You are not logged in" depending on the boolean state of authentication.
@@ -179,7 +180,7 @@ Underneath this is a contact us form targeted at both travel agencies/ other blo
 
 ### Custom Model: Contact us form
 This is located at the bottom of the about me page and any requests are also visible in the Django administration panel. This is my custom model of choice, the initial code basis was take from the CodeStar walthrough project, however for the purposes of this project, it was adapted to be a contact request form, with the users name, email, subject, message and destination (that they are referring to or are wanting to explore further). Only the name, message and email fields are mandatory due to communication purposes. 
- ![Contact Us From](docs/readme_images/contact_form.png)
+ ![Contact Us From](docs/readme_images/custom_model.png)
 
 ### Sign in form
 This is a crispy form that asks for username and password and offers a 'remember me' option for ease of access in the future. 
