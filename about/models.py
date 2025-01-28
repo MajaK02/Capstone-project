@@ -17,8 +17,10 @@ class About(models.Model):
 class ContactRequest(models.Model):
     name = models.CharField(max_length=200)
     email = models.EmailField()
+    subject = models.CharField(max_length=200, blank=True, null=True)
     message = models.TextField()
     read = models.BooleanField(default=False)
+    destination = models.CharField(max_length=200, blank=True, null=True)
 
     def __str__(self):
         return f"Contact request from {self.name}"
