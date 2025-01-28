@@ -1,4 +1,4 @@
-Discover Polska 
+<h1>Discover Polska</h1>
 
 For this capstone project, the aim was to develop a full stack website built using the Django web framework. Discover Polska is a travel blog suitable for female or solo travellers wanting to explore locations in Poland, and read comments from other travelers to get their opinion or other useful advice regarding specific locations, cities or attractions.  This website provides users with; a blog with the top attractions in Poland, comments section, and about page for users to gin insight into who the writer is (I used myself in this case as I felt it was more authentic) and a contact us form, which encouraged users, other travellers or travel companies to get in contact in order to set up collaboration, share some more hidden locations to see and other requestes. 
 
