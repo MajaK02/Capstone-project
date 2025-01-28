@@ -27,7 +27,6 @@ For this Capstone project,
    * [Register form (Sign up)](#register-form-sign-up)
    * [Sign out page](#sign-out-page)
 - [Deployment](#Deployment)
-- [Validation](#Validation)
 - [Issues & Bugs](#Issues&Bugs)
 - [Validation](#Validation)
 - [Future Improvements](#FutureImprovements)
@@ -136,7 +135,7 @@ Additionally the logo, when clicked, redirects the user back to the home page (e
 
 #### Monitor navigation bar
 
-![Monitor navbar](docs/readme_images/navbar.PNG)
+![Monitor navbar](docs/readme_images/navbar.png)
 
 
 ### Hero image
