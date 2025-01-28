@@ -40,7 +40,7 @@
       <img
         src="{% static 'images/poland7.jpeg' %}"
         class="d-block w-100"
-        alt="Slide 1"
+        alt="The rising sun overlooking mountains."
       />
       <div class="container">
         <div class="carousel-caption text-start">
@@ -53,7 +53,7 @@
       <img
         src="{% static 'images/poland8.jpeg' %}"
         class="d-block w-100"
-        alt="Slide 2"
+        alt="A rowboat on the shore overlooking a clear, bright blue lake on a sunny day."
       />
       <div class="container">
       </div>
@@ -62,7 +62,7 @@
       <img
         src="{% static 'images/poland6.jpeg' %}"
         class="d-block w-100"
-        alt="Slide 3"
+        alt="A view of a village covered in greenery and flowing water."
       />
       <div class="container">
         <div class="carousel-caption text-end">
@@ -73,7 +73,7 @@
       <img
         src="{% static 'images/poland9.jpeg' %}"
         class="d-block w-100"
-        alt="Slide 4"
+        alt="An autumn photo of a forest with orange-leaved trees in Poland with Bisons."
       />
       <div class="container">
         <div class="carousel-caption text-end">
@@ -118,7 +118,7 @@
                 <img
                   class="card-img-top"
                   src="{% static 'images/default.jpg' %}"
-                  alt="placeholder image"
+                  alt="An image of old buildings covered by trees, in a little woodland area."
                 />
                 {% else %}
                 <img
@@ -148,20 +148,13 @@
     <nav aria-label="Page navigation">
       <ul class="pagination justify-content-center">
         {% if page_obj.has_previous %}
-        <li>
-          <a href="?page={{ page_obj.previous_page_number }}" class="page-link"
-            >&laquo; PREV</a
-          >
+        <li class="page-item">
+          <a href="?page={{ page_obj.previous_page_number }}" class="page-link">&laquo; PREV</a>
         </li>
-        {% endif %} {% for num in paginator.page_range %}
-        <li class="page-item {% if page_obj.number == num %}active{% endif %}">
-          <a class="page-link" href="?page={{ num }}">{{ num }}</a>
-        </li>
-        {% endfor %} {% if page_obj.has_next %}
-        <li>
-          <a href="?page={{ page_obj.next_page_number }}" class="page-link">
-            NEXT &raquo;</a
-          >
+        {% endif %}
+        {% if page_obj.has_next %}
+        <li class="page-item">
+          <a href="?page={{ page_obj.next_page_number }}" class="page-link">NEXT &raquo;</a>
         </li>
         {% endif %}
       </ul>
