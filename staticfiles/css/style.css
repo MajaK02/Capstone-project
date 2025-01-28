@@ -6,24 +6,49 @@ body {
     font-family: Lato, sans-serif;
     font-size: 1.4rem;
     font-weight: 700;
-    color: #4A4A4F;
+    color: #C0895C;
 }
 
+/* Navigation */
+.navbar-custom {
+    background-color: #345346;
+    padding: 1.5rem 1rem; /* Increase padding */
+    font-size: 1.25rem; /* Increase font size */
+}
+
+/* Navbar font color */
+.navbar-brand,
+.navbar-nav .nav-link {
+    color: #C0895C !important; /* Change text color */
+}
+
+.navbar-nav .nav-link:hover {
+    color: #FFD700 !important; /* Optional: Change color on hover */
+}
+
+.navbar-custom .navbar-brand img {
+    height: 55px; /* Increase logo size */
+}
+
+.navbar-custom .nav-link {
+    padding: 0.75rem 1rem; /* Increase padding for nav links */
+}
+
+/* Carousel image size */
+.carousel-inner img {
+    max-height: 500px; /* Adjust the height as needed */
+    object-fit: cover; /* Ensure the image covers the area while maintaining aspect ratio */
+}
+
+/* Blog posts on Main page */
 .red-o {
-    color: #E84610;
+    color: #345346;
 }
 
 .thin {
     font-weight: 300;
 }
 
-.light-bg {
-    background-color: #fff;
-}
-
-.dark-bg {
-    background-color: #445261;
-}
 
 .main-bg {
     background-color: #F9FAFC;
@@ -34,17 +59,20 @@ body {
     background-color: transparent;
 }
 
+
 .image-container {
     position: relative;
 }
+
 
 .image-flash {
     position: absolute;
     bottom: 5%;
     min-width: 30%;
     left: -2px;
-    background-color: #188181;
+    background-color: #345346;
 }
+
 
 .scale {
     width: 100%;
@@ -55,8 +83,9 @@ body {
     color: white;
     margin: 4px;
     text-transform: uppercase;
-}
+} 
 
+/* Blog post (top) */
 .masthead {
     margin-top: 10px;
     overflow: hidden;
@@ -67,8 +96,8 @@ body {
 }
 
 .masthead-text {
-    background-color: #445261;
-    color: white;
+    background-color: #345346;
+    color: #C0895C;
     position: relative;
 }
 
@@ -84,7 +113,7 @@ body {
     right: 90%;
     height: 100%;
     width: 150%;
-    background: #445261;
+    background: #345346;
     -webkit-transform: skew(15deg);
     -moz-transform: skew(15deg);
     transform: skew(15deg);
@@ -93,7 +122,7 @@ body {
 
 .post-link {
     text-decoration: none;
-    color: #445261;
+    color: #345346;
 }
 
 .post-link:hover,
@@ -113,18 +142,18 @@ body {
 
 .btn-signup,
 .btn-edit {
-    background-color: #188181;
+    background-color: #345346;
     color: #fff;
 }
 
 .btn-signup:hover,
 .btn-signup:active {
     background-color: #fff;
-    color: #23BBBB;
+    color: #345346;
 }
 
 .link {
-    color: #23BBBB;
+    color: #345346;
     text-decoration: none;
 }
 
@@ -158,4 +187,34 @@ body {
 
 .approval {
     color: rgb(222, 146, 168);
+}
+
+/* Social media icons */
+.footer .social-icon {
+    margin: 0 10px; /* Adjust the spacing as needed */
+    color: #C0895C; /* Change the color as needed */
+    font-size: 1.5rem; /* Adjust the size as needed */
+}
+
+.footer .social-icon:hover {
+    color: #fff; /* Change the hover color as needed */
+}
+
+.portrait-img {
+    max-width: 100%;
+    height: auto;
+    max-height: 400px; /* Adjust the height as needed */
+}
+
+/* Footer font color */
+.footer {
+    color: #C0895C !important; /* Change text color */
+}
+
+.footer a {
+    color: #C0895C !important; /* Change link color */
+}
+
+.footer a:hover {
+    color: #FFD700 !important; /* Optional: Change color on hover */
 }
