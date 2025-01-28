@@ -55,7 +55,7 @@ This project can be found at: https://capstone-project-mk-6cfa95e93b99.herokuapp
 
 GitHub Copilot provided useful suggestions for user stories, though some required adjustment to meet project goals.
 
-The user stories for this project were taken from the Code Institute Code-Star blog project.
+The user stories for this project were taken from the Code Institute Code-Star blog project. Due to my limited experience and lack of confidence in using Python/Django, I chose to not go 'overboard' with my User Stories like in previous projects, becasue I did want to build the habit of maintaining agile methodology in using them and keeping on track. 
 
 This prompt generated the necessary user stories applicable to our project design, and it was further clarified to include the must-have, shold-have and could-have MOSCoW labels. 
 
