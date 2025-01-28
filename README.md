@@ -100,11 +100,13 @@ This ensured the project was in line with the project requirements as set out by
 
 ### AI
 
-To further supplement the website design, I included the following AI technology and websites to aid in the creation of the user stories, initial design ideas and to debug any issues within the code.
+To further supplement the website design, I included the following AI technology and websites to aid in the creation of the initial design ideas and to debug any issues within the code.
 
 * #### [Perplexity.ai](#https://www.perplexity.ai) 
 * #### [Chat GPT](#https://chatgpt.com/)
 * #### Co-pilot (Github)
+
+Also, certain parts of the code were used from the CodeStar Blog walkthrough by Code Institute, to build the foundation of the project using Django (this is for the models i.e. Post, Comment and to ensure working CRUD functionality). The contact us form was developed from the walkthrough's Collaboration Form, however the contact us form was adapted as a custom model for this project, including additional, custom features relating to subject and destination.  
 
 
 ### Websites
