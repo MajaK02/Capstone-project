@@ -8,7 +8,7 @@ The website was built using Django, HTML, CSS, and JavaScript, computer/laptop-b
 
 This project can be found at: https://capstone-project-mk-6cfa95e93b99.herokuapp.com/ 
 
-![Homepage](docs/readme_images/hero_image.png)
+![Homepage](docs/readme_images/capstone_responsive.png)
 
 ## Table of Contents
 - [User experience (UX)](#user-experience-ux)
